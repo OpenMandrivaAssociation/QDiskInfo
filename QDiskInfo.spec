@@ -2,7 +2,7 @@
 
 Name:		QDiskInfo
 Version:	0.3
-Release:	1
+Release:	2
 URL:		https://github.com/edisionnano/QDiskInfo
 Source0:	%{url}/archive/refs/tags/%{version}.tar.gz
 Summary:	QDiskInfo is a frontend for smartctl
@@ -17,6 +17,9 @@ BuildOption: -DENABLE_TRANSLATIONS=ON
 BuildRequires:	cmake
 BuildRequires:	qt6-cmake
 BuildRequires:	cmake(Qt6Widgets)
+BuildRequires:	qt6-qttools-linguist-tools
+BuildRequires:	vulkan-headers
+BuildRequires:	libvulkan-devel
 
 %description
 QDiskInfo is a frontend for smartctl (part of the smartmontools package). It provides a user experience similar to CrystalDiskInfo. It shows the SMART (Self-Monitoring, Analysis, and Reporting Technology) data of modern hard disk drives.
