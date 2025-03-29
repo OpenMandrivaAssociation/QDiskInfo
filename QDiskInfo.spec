@@ -7,7 +7,7 @@ Name:		QDiskInfo
 Version:	0.3.git%{shortcommit}
 Release:	3
 URL:		https://github.com/edisionnano/QDiskInfo
-Source0:	%{url}/archive/%{astal_commit}/%{name}-%{shortcommit}.tar.gz
+Source0:	%{url}/archive/%{commit}/%{name}-%{shortcommit}.tar.gz
 Summary:	QDiskInfo is a frontend for smartctl
 License:	GPL-3.0
 Group:		Applications/System
