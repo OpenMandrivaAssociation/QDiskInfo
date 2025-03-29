@@ -1,10 +1,13 @@
 %global debug_package %{nil}
 
+%global commit eae61beac7e5ef15a9570ad8509f308532b28050
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+
 Name:		QDiskInfo
-Version:	0.3
+Version:	0.3.git%{shortcommit}
 Release:	2
 URL:		https://github.com/edisionnano/QDiskInfo
-Source0:	%{url}/archive/refs/tags/%{version}.tar.gz
+Source0:	%{url}/archive/%{astal_commit}/%{name}-%{shortcommit}.tar.gz
 Summary:	QDiskInfo is a frontend for smartctl
 License:	GPL-3.0
 Group:		Applications/System
