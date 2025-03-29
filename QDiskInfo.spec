@@ -22,7 +22,7 @@ BuildRequires:	qt6-cmake
 BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	qt6-qttools-linguist-tools
 BuildRequires:	vulkan-headers
-BuildRequires:	libvulkan-devel
+BuildRequires:	lib64vulkan1
 
 %description
 QDiskInfo is a frontend for smartctl (part of the smartmontools package). It provides a user experience similar to CrystalDiskInfo. It shows the SMART (Self-Monitoring, Analysis, and Reporting Technology) data of modern hard disk drives.
