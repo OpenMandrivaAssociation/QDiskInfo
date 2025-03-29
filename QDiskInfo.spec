@@ -27,7 +27,7 @@ BuildRequires:	lib64vulkan1
 %description
 QDiskInfo is a frontend for smartctl (part of the smartmontools package). It provides a user experience similar to CrystalDiskInfo. It shows the SMART (Self-Monitoring, Analysis, and Reporting Technology) data of modern hard disk drives.
 %prep
-%autosetup -p1
+%autosetup -n %{name}-%{commit} -p1
 
 %files
 %{_bindir}/QDiskInfo
